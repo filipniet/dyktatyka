@@ -1,0 +1,59 @@
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<script language="JavaScript">
+function dlugosc_nie(d_nie,x_nie)
+{
+ d_nie=parseFloat(d_nie);
+ x_nie=parseFloat(x_nie);
+ drabina_nie=Math.sqrt(d_nie*d_nie+x_nie*x_nie);
+ document.getElementsByName('drab')[0].value=drabina_nie.toFixed(2);
+ alert("Drabina="+drabina_nie.toFixed(2)+" m");
+ drabina.innerHTML="Drabina="+drabina_nie.toFixed(2)+" m"+"<br>";
+}
+function alfa_nie(d_nie,x_nie)
+{
+ d_nie=parseFloat(d_nie);
+ x_nie=parseFloat(x_nie);
+ radian_nie=Math.atan2(d_nie,x_nie);
+ stopnie_nie=radian_nie*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_nie.toFixed(2);
+ alert("Alfa="+stopnie_nie.toFixed(2)+" stopni");
+ alfa.innerHTML="Alfa="+stopnie_nie.toFixed(2)+" stopni";
+}
+function okno_zamknij_nietyksza_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny 
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc_nie(this.d_dana_nie.value,this.x_dana_nie.value);
+alfa_nie(this.d_dana_nie.value,this.x_dana_nie.value);return false">
+Podaj d=
+<input size="6" name="d_dana_nie">
+Podaj x=
+<input size="6" name="x_dana_nie">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="drabina"></tr>
+<tr id="alfa"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_nietyksza_kod()"/>
+</table>
+</body>
+</html>
