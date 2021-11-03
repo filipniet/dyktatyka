@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<script language="JavaScript">
+function kolor()
+{
+var x=prompt("Podaj kolor lub liczbę","");
+if(x=="1" || x=="czerwony"){
+document.write("<font color=red size=10>wpisałes kolor czerwony</font>"+"<br>");
+}else if(x=="2" || x=="niebieski"){
+document.write("<font color=blue size=10>wpisałes kolor niebieski</font>"+"<br>");
+}else 
+{document.write("musisz podac 1 lub 2, albo czrwony lub niebieski");}
+}
+
+
+</script>
+<meta charset="utf-8">
+<title> </title>
+</head>
+<body>
+<p style="color: green;">MENU:</p><br>
+<p style="color: red;">1-CZERWONY</p><br>
+<p style="color: blue;">2-NIEBIESKI</p><br>
+<input type="button" onclick="kolor()" value="Oblicz" >
+
+</body>
+</html>
