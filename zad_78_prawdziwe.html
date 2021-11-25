@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>
+Przykład petli
+</title>
+<script language="JavaScript">
+var r1=2.01;
+var r2 = 4.5;
+var r3 = 116;
+var r4 = 1016;
+var licznik1 = 0;
+var licznik2 = 0;
+var licznik3 = 0;
+var licznik4 = 0;
+	for(var i = -r1; i <=r1; i++){
+		for(var j=-r1; j<=r1; j++){
+			var a=Math.sqrt(i*i+j*j);
+			if(a<=r1){
+				licznik1++;
+			}
+		}
+	}
+for(var k = -r2; k <=r2; k++){
+		for(var l=-r2; l<=r2; l++){
+			var b=Math.sqrt(l*l+k*k);
+			if(b<=r2){
+				licznik2++;
+			}
+		}
+	}
+for(var m = -r3; m <=r3; m++){
+		for(var n=-r3; n<=r3; n++){
+			var c=Math.sqrt(m*m+n*n);
+			if(c<=r3){
+				 licznik3++;
+			}
+		}
+	}
+for(var o = -r4; o <=r4; o++){
+		for(var p=-r4; p<=r4; p++){
+			var d=Math.sqrt(o*o+p*p);
+			if(d<=r4){
+				licznik4++;
+			}
+		}
+	}
+
+</script>
+<style>
+tr, td, table{
+border: 1px solid black	;
+border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<table>
+<td>2,01</td><td><script>document.write(licznik1);</script></td>	
+<tr>
+<td>4,50</td><td><script>document.write(licznik2);</script></td>
+<tr>
+<td>100+16</td><td><script>document.write(licznik3);</script></td>
+<tr>
+<td>1000+16</td><td><script>document.write(licznik4);</script></td>
+</table>
+</body>
+</html>
